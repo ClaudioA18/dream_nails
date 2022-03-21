@@ -6,7 +6,7 @@
 /*variables*/
 :root {
     --principal: #401d36;
-    --secondary: #baa1a7;
+    --secondary: linear-gradient(to right bottom, #ad6791, #b56f99, #be76a0, #c67ea8, #cf86b0, #d68db7, #dc94bf, #e39bc6, #eaa3ce, #f1abd6, #f8b3df, #ffbbe7);
     --font-primary: 'Oswald', sans-serif;
     --text-lg: 6em;
     --text-md: 4em;
@@ -121,6 +121,8 @@ footer{
 }
 
 
+
+
 /* fin de general*/
 
 
@@ -154,6 +156,11 @@ footer{
 .index__img{
     width: 70%;
     grid-area: imgPrincipal ;
+    transition: transform 5s ease;
+}
+
+.index__img:hover{
+    transform: scale(1.3);
 }
 
 /*fin de index*/
@@ -358,6 +365,7 @@ width: 100%;
     color: #401d36;
     font-size: var(--text-lg);
     text-transform: capitalize;
+    animation: contacto infinite alternate ease-in 8s
 }
 
 .contacto__formulario{
@@ -461,6 +469,38 @@ width: 100%;
 .contacto__info ul{
     list-style: none;
     padding: none;
+}
+
+@keyframes contacto{
+    0%{
+        font: size 6em; ;
+    }
+    20% {
+        font-size: 8em ;
+        color: #79374B;
+    }
+    
+    40%{
+        font-size: 6em;
+        color: #B05854;
+    }
+
+    60%{
+        font-size: 8em;
+        color: #DC8556;
+
+    }
+
+    80%{
+        font-size: 6em;
+        color: #F5BC5A;
+    }
+
+    100%{
+        font-size: 8em;
+        color: #F9F871;
+    }
+
 }
 /* Fin Contacto*/
 
