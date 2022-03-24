@@ -23,336 +23,45 @@
 
 /*fin de reset*/
 
-/*helpers*/
-
-.flex-row{
-    display: flex;
-}
-
-.flex-column{
-    display: flex;
-    flex-direction: column;
-}
-
-.container{
-    max-width: 1080px;
-    margin: 0 auto;
-}
-
-/*fin de helpers*/
-
-
-/*General*/
-
-html{
-    font-size: 62.5%;
-    font-family: var(--font-primary);
-    color: white;
-    background-color: #BAA1A7;
-}
-
 body{
     background: var(--secondary);
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    
-}
-
-ul {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    display: inline-block;
 }
 
 /*header*/
-img.logo{
-    width: 200px;
-}
 
 header{
-    background-color: var(--principal);
+    background-color: #401d36;
 }
 
-header.logo{
-    flex-basis: 30%;
+nav{
+    background-color: #401d36;
 }
 
-
-header .menu{
-    flex-basis: 40%;
-    justify-content: space-between;
-    font-size:1.3em;
-}
-
-header .menu__item{
-    border: 2px solid var(--principal)  ;
-}
-
-header .menu__item:hover{
-border-color: var(--secondary);
-}
-
-header .navbar{
-    min-height: 10vh;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-}
-
-.menu .menu__item .menu__link{
+li{
     font-size: 2em;
-    padding: 1rem;
 }
 
-img.contacto{
-    width: 100px;
+.navbar-light .navbar-nav .nav-link{
+    color: white;
 }
+
 
 footer{
     background-color: var(--principal);
     min-height: 10vh;
     flex-direction: column;
     align-items: center;
+
 }
 
-
-
-
-/* fin de general*/
-
-
-
-/*index*/
-.index{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 15vh auto;
-    grid-template-areas: 
-    "tituloPrincipal tituloPrincipal"
-    "textoPrincipal imgPrincipal";
-    gap: 2rem;
+.texto-principal{
+    font-size: 3.5em;
 }
 
-.index__titulo{
+h1{
+    
     color: #401d36;
-    font-size: var(--text-lg);
-    text-transform: capitalize;
-    justify-content: center;
-    grid-area: tituloPrincipal;
 }
-
-.index__parrafo{
-    font-family:var(--font-primary);
-    font-size: var(--text-md);
-    grid-area: textoPrincipal;
-    color: black;
-}
-
-.index__img{
-    width: 70%;
-    grid-area: imgPrincipal ;
-    transition: transform 5s ease;
-}
-
-.index__img:hover{
-    transform: scale(1.3);
-}
-
-/*fin de index*/
-
-/*Inicio Servicios*/
-
-.servicios__titulo{
-    color: #401d36;
-    font-size: var(--text-lg);
-    text-transform: capitalize;
-    justify-content: center;
-}
-
-.servicios__parteUno{
-    gap: 2rem;
-    margin: 4rem;
-    align-items: center;
-}
-
-.parteUno__titulo{
-    font-size: var(--text-md);
-    color: black;
-}
-
-.parteUno__parrafo{
-    font-family:var(--font-primary);
-    font-size: var(--text-md);
-    color: black;
-}
-
-.parteUno__img{
-    width: 100%;
-}
-
-.servicios__parteDos{
-   gap: 2rem;
-   flex-direction: row-reverse;
-   margin: 4rem;
-   align-items: center;
-}
-
-.parteDos__titulo{
-    font-size: var(--text-md);
-    color: black;
-}
-
-.parteDos__parrafo{
-    font-family:var(--font-primary);
-    font-size: var(--text-md);
-    color: black;
-}
-
-.parteDos__img{
-    width: 100%;
-}
-
-.servicios__parteTres{
-    gap: 2rem;
-    margin: 4rem;
-    align-items: center;
-}
-
-.parteTres__titulo{
-    font-size: var(--text-md);
-    color: black;
-}
-
-.parteTres__parrafo{
-    font-family:var(--font-primary);
-    font-size: var(--text-md);
-    color: black;
-}
-
-.parteTres__img{
-    width: 100%;
-}
-
-/*Fin de Servicios*/
-
-/*Inicio de pormociones*/
-.promociones{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 15vh auto;
-    grid-template-areas: 
-    "promoTitulo promoTitulo"
-    "parteUno parteDos";
-    gap: 2rem
-    ;
-}
-
-.promociones__titulo{
-    grid-area: promoTitulo;
-    color: #401d36;
-    font-size: var(--text-lg);
-    text-transform: capitalize;
-    justify-content: center
-}
-
-.promociones__parteUno{
-    grid-area: parteUno;
-}
-
-.parteUnoPromo__titulo{
-    font-size: var(--text-md);
-    color: black;
-}
-
-.parteUnoPromo__parrafo{
-    font-family:var(--font-primary);
-    font-size: var(--text-md);
-    color: black;
-}
-
-.parteUnoPromo__img{
-width: 100%;
-}
-
-.promociones__parteDos{
-    grid-area: parteDos;
-}
-
-.parteDosPromo__titulo{
-    font-size: var(--text-md);
-    color: black;
-}
-
-.parteDosPromo__parrafo{
-    font-family:var(--font-primary);
-    font-size: var(--text-md);
-    color: black;
-}
-
-.parteDosPromo__img{
-    width: 100%;
-}
-
-/*Fin de promociones*/
-
-
-/*Galeria*/
-
-.galeria{
-    flex-direction: column;
-}
-
-.galeria__titulo{
-    color: #401d36;
-    font-size: var(--text-lg);
-    text-transform: capitalize;
-    justify-content: center;
-}
-
-.galeria__imagenes{
-    display: grid;
-    align-items: center;
-    gap: 1rem;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-template-areas: 
-    "imagen4 imagen1 imagen3"
-    "imagen4 imagen2 imagen3"
-    "imagen4 imagen5 imagen3";
-}
-
-.imagen1{
-    grid-area: imagen1;
-}
-
-.imagen2{
-    grid-area: imagen2;
-}
-
-.imagen3{
-    grid-area: imagen3;
-}
-
-.imagen4{
-    grid-area: imagen4;
-}
-
-.imagen5{
-    grid-area: imagen5;
-}
-
-.trabajos{
-    width: 100%;
-}
-
-/*fin Galeria*/
-
-/*Contacto*/
 
 .contacto{
     margin-left: auto;
@@ -371,7 +80,7 @@ width: 100%;
 .contacto__formulario{
     box-shadow: 0 0 20px 0 rgba(225, 225, 225, .3);
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .contacto__formulario > *{
@@ -454,6 +163,8 @@ width: 100%;
 
 .contacto__info{
     background: #5f3759;
+    font-size: .5em;
+    padding: 1em;
 }
 
 .contacto__info h2,
@@ -469,166 +180,4 @@ width: 100%;
 .contacto__info ul{
     list-style: none;
     padding: none;
-}
-
-@keyframes contacto{
-    0%{
-        font: size 6em; ;
-    }
-    20% {
-        font-size: 8em ;
-        color: #79374B;
-    }
-    
-    40%{
-        font-size: 6em;
-        color: #B05854;
-    }
-
-    60%{
-        font-size: 8em;
-        color: #DC8556;
-
-    }
-
-    80%{
-        font-size: 6em;
-        color: #F5BC5A;
-    }
-
-    100%{
-        font-size: 8em;
-        color: #F9F871;
-    }
-
-}
-/* Fin Contacto*/
-
-
-@media screen and (max-width: 768px) {
-    
-    
-    header{
-        padding: 2em;
-    }
-
-    .menu{
-        font-size: 8em;
-    }
-
-    header .navbar{
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .index{
-        display: grid;
-        justify-content: center;
-        justify-items: center;
-        gap: 2rem;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(3,auto);
-        grid-template-areas: 
-        "tituloPrincipal"
-        "textoPrincipal" 
-        "imgPrincipal";
-    }
-
-    .index__img{
-        flex-grow: 1;
-    }
-
-    .servicios__parteUno{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .servicios__parteDos{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .servicios__parteTres{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .parteUno__img{
-        flex-grow: 1;
-    }
-
-    .parteDos__img{
-        flex-grow: 1;
-    }
-
-    .parteTres__img{
-        flex-grow: 1;
-    }
-
-    .promociones{
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(3,auto);
-        grid-template-areas: 
-        "promoTitulo"
-        "parteUno"
-        "parteDos";
-
-    }
-
-    .promociones__parteUno{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .parteUnoPromo__img{
-        flex-grow: 1;
-    }
-
-    .promociones__parteDos{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .parteDosPromo__img{
-        flex-grow: 1;
-    }
-
-    .galeria__imagenes{
-        grid-template-columns: 1fr;
-        grid-template-rows: (5,auto);
-        grid-template-areas: 
-        "imagen4"
-        "imagen3"
-        "imagen2"
-        "imagen1"
-        "imagen5";
-    }
-
-    footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contacto__formulario > *{
-        padding: 1em;
-    }
-
-    .contacto__info h2,
-    .contacto__info ul,
-    .contacto__info p{
-    text-align: center;
-    margin: 0 0 1rem 0;
-    font-size: 2em;
-    color: black;
-    }
-
-    .contacto__formulario{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-
-
 }
