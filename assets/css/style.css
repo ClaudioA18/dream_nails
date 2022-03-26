@@ -20,11 +20,14 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html{
+    font-family: var(--font-primary);
+}
 /*fin de reset*/
 
 body{
     background: var(--secondary);
+    
 }
 
 /*header*/
@@ -54,9 +57,7 @@ footer{
 
 }
 
-.texto-principal{
-    font-size: 3.5em;
-}
+
 
 h1{
     
@@ -64,24 +65,13 @@ h1{
 }
 
 .contacto{
-    margin-left: auto;
-    margin-right: auto;
+    
     padding: 1.5em;
 }
 
-.contacto__titulo{
-    text-align: center;
-    color: #401d36;
-    font-size: var(--text-lg);
-    text-transform: capitalize;
-    animation: contacto infinite alternate ease-in 8s
-}
 
-.contacto__formulario{
-    box-shadow: 0 0 20px 0 rgba(225, 225, 225, .3);
-    display: grid;
-    grid-template-columns: 1fr;
-}
+
+
 
 .contacto__formulario > *{
     padding: 2em;
@@ -131,7 +121,6 @@ h1{
     margin: 0;
     padding: 1em;
     color: black;
-    font-size: 2em;
 }
 
 .contacto__datos form button,
@@ -163,7 +152,6 @@ h1{
 
 .contacto__info{
     background: #5f3759;
-    font-size: .5em;
     padding: 1em;
 }
 
@@ -171,13 +159,15 @@ h1{
 .contacto__info ul,
 .contacto__info p{
     padding: 1em;
-    text-align: left;
     margin: 0 0 1rem 0;
-    font-size: 2em;
     color: black;
 }
 
 .contacto__info ul{
     list-style: none;
     padding: none;
+}
+
+.body__contacto{
+    min-width: 63vh;
 }
