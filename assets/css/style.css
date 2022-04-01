@@ -11,6 +11,7 @@
     --text-lg: 6em;
     --text-md: 4em;
 }
+/*Fin de variables*/
 
 /* reset*/
 *,
@@ -25,10 +26,14 @@ html{
 }
 /*fin de reset*/
 
+/*Body */
+
 body{
     background: var(--secondary);
     
 }
+
+/*Fin del body*/
 
 /*header*/
 
@@ -47,18 +52,18 @@ li{
 .navbar-light .navbar-nav .nav-link{
     color: white;
 }
+/*Fin del header*/
 
-
+/*Footer*/
 footer{
     background-color: var(--principal);
     min-height: 10vh;
     flex-direction: column;
     align-items: center;
-
 }
+/*Fin del footer*/
 
-
-
+/*Contacto*/
 h1{
     
     color: #401d36;
@@ -68,10 +73,6 @@ h1{
     
     padding: 1.5em;
 }
-
-
-
-
 
 .contacto__formulario > *{
     padding: 2em;
@@ -171,3 +172,4 @@ h1{
 .body__contacto{
     min-width: 63vh;
 }
+/*Fin de Contacto*/
