@@ -1,20 +1,20 @@
-/*imports*/
+/* imports
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500;700&display=swap');
 
 /*fin de imports*/
 
 /*variables*/
-:root {
-    --principal: #401d36;
-    --secondary: linear-gradient(to right bottom, #ad6791, #b56f99, #be76a0, #c67ea8, #cf86b0, #d68db7, #dc94bf, #e39bc6, #eaa3ce, #f1abd6, #f8b3df, #ffbbe7);
-    --font-primary: 'Oswald', sans-serif;
-    --text-lg: 6em;
-    --text-md: 4em;
-}
+/* :root {
+    $principal: #401d36;
+    $secondary: linear-gradient(to right bottom, #ad6791, #b56f99, #be76a0, #c67ea8, #cf86b0, #d68db7, #dc94bf, #e39bc6, #eaa3ce, #f1abd6, #f8b3df, #ffbbe7);
+    $font-primary: 'Oswald', sans-serif;
+    $text-lg: 6em;
+    $text-md: 4em;
+} */
 /*Fin de variables*/
 
 /* reset*/
-*,
+/* *,
 *::after,
 *::before{
     padding: 0;
@@ -22,22 +22,22 @@
     box-sizing: border-box;
 }
 html{
-    font-family: var(--font-primary);
-}
+    font-family: var($font-primary);
+} */
 /*fin de reset*/
 
 /*Body */
 
-body{
-    background: var(--secondary);
+/* body{
+    background: var($secondary);
     
-}
+} */
 
 /*Fin del body*/
 
 /*header*/
 
-header{
+/* header{
     background-color: #401d36;
 }
 
@@ -47,24 +47,24 @@ nav{
 
 li{
     font-size: 2em;
-}
+} */
 
-.navbar-light .navbar-nav .nav-link{
+/* .navbar-light .navbar-nav .nav-link{
     color: white;
-}
+} */
 /*Fin del header*/
 
 /*Footer*/
-footer{
-    background-color: var(--principal);
+/* footer{
+    background-color: var($principal);
     min-height: 10vh;
     flex-direction: column;
     align-items: center;
-}
+} */
 /*Fin del footer*/
 
 /*Contacto*/
-h1{
+/* h1{
     
     color: #401d36;
 }
@@ -171,5 +171,5 @@ h1{
 
 .body__contacto{
     min-width: 63vh;
-}
-/*Fin de Contacto*/
+} */ 
+/*Fin de Contacto */

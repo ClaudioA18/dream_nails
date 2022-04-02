@@ -1,0 +1,109 @@
+.contacto {
+    padding: 1.5em;
+
+    &__formulario>* {
+        padding: 2em;
+    }
+
+    &__datos {
+        background: #64556f;
+
+        form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                "nombre email"
+                "telefono asunto"
+                "mensaje mensaje"
+                "boton boton";
+
+            p {
+                margin: 0;
+                padding: 1em;
+                color: black;
+            }
+
+            button,
+            input,
+            textarea {
+                width: 100%;
+                padding: .7em;
+                border: none;
+                background: none;
+                outline: none;
+                border-bottom: 1px solid #baa1a7;
+            }
+
+            button {
+                background: #BAA1A7;
+                border: 0;
+                text-transform: uppercase;
+                padding: 1em;
+
+                &:hover,
+                &:focus {
+                    background: #c7b2b6;
+                    color: white;
+                    transition: background-color 1s ease-out;
+                    outline: none;
+                }
+
+            }
+
+        }
+
+    }
+
+    &__info {
+        background: #5f3759;
+        padding: 1em;
+
+        h2,
+        ul,
+        p {
+            padding: 1em;
+            margin: 0 0 1rem 0;
+            color: black;
+        }
+
+        ul {
+            list-style: none;
+            padding: none;
+        }
+
+
+
+    }
+
+}
+
+
+.nombre {
+    grid-area: nombre;
+}
+
+.email {
+    grid-area: email;
+}
+
+.telefono {
+    grid-area: telefono;
+}
+
+.asunto {
+    grid-area: asunto;
+}
+
+.mensaje {
+    grid-area: mensaje;
+}
+
+.boton {
+    grid-area: boton;
+}
+
+
+.body__contacto {
+    min-width: 63vh;
+}

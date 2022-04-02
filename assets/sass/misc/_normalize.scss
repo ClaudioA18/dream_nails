@@ -1,0 +1,23 @@
+/*Reset*/
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Globales*/
+
+html{
+    font-family: $font-primary;
+}
+
+body{
+    background: $secondary;
+}
+
+h1{
+    
+    color: #401d36;
+}
+
