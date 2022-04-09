@@ -7,9 +7,28 @@ nav{
 }
 
 li{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .navbar-light .navbar-nav .nav-link{
     color: white;
+}
+
+.logo{
+    @include sizes (300px,300px);
+}
+
+.item{
+    border: 2px solid #401d36;
+    transition: border-color .3s ease-in-out;
+
+    &--active {
+        @extend .item;
+        border-bottom: 2px solid #f294ad;
+    }
+
+    &:hover{
+        border-color: #f294ad;
+    }
+
 }

@@ -3,3 +3,18 @@ $secondary: linear-gradient(to right bottom, #ad6791, #b56f99, #be76a0, #c67ea8,
 $font-primary: 'Oswald', sans-serif;
 $text-lg: 6em;
 $text-md: 4em;
+
+
+$sizes: (
+    xlarge: 4em,
+    large: 3em,
+    medium: 2em,
+    small: 1.5em,
+    xsamll: 1em,
+);
+
+@each $var, $val in $sizes {
+    .t-#{$var} {
+        font-size: #{$val};
+    }
+}
