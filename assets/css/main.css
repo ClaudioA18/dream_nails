@@ -16,25 +16,6 @@
 .t-xsamll {
   font-size: 1em; }
 
-/*Reset*/
-*,
-*::after,
-*::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-/*Globales*/
-html {
-  font-family: "Oswald", sans-serif; }
-
-body {
-  background: linear-gradient(to right bottom, #ad6791, #b56f99, #be76a0, #c67ea8, #cf86b0, #d68db7, #dc94bf, #e39bc6, #eaa3ce, #f1abd6, #f8b3df, #ffbbe7); }
-
-h1 {
-  color: #401d36;
-  font-size: 4em; }
-
 /*Partials*/
 header {
   background-color: #401d36; }
@@ -134,3 +115,33 @@ footer {
 
 .body__contacto {
   min-width: 63vh; }
+
+/*Normalize*/
+/*Reset*/
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/*Globales*/
+html {
+  font-family: "Oswald", sans-serif; }
+
+body {
+  background: linear-gradient(to right bottom, #ad6791, #b56f99, #be76a0, #c67ea8, #cf86b0, #d68db7, #dc94bf, #e39bc6, #eaa3ce, #f1abd6, #f8b3df, #ffbbe7); }
+
+h1 {
+  color: #401d36;
+  font-size: 4em; }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em; }
+  .logo {
+    width: 150px;
+    height: 150px; } }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white; }

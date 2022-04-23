@@ -21,3 +21,16 @@ h1{
     font-size: map-get($sizes, xlarge );
 }
 
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: map-get($sizes, medium);
+    }
+    .logo{
+       width: 150px;
+       height: 150px;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: white;
+}
